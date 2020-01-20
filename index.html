@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Set and Get</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!--header section-->
+    <div class="container">
+        <header>
+            <a href="#">
+                <img src="assets/images/logo.svg" alt="logo" class="logo">
+            </a>
+            <nav>
+                <a href="#" class="hide-desktop">
+                    <img src="assets/images/ham.svg" alt="humburger menu" class="menu" id="menu">
+                </a>
+                <ul class="show-desktop hide-mobile" id="nav">
+                    <li id="exit" class="exit-btn hide-desktop"><img src="assets/images/exit.svg" alt="exits-menu" id=""></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section>
+            <img src="assets/images/server.svg" alt="server" class="server">
+
+            <h1>Web Hosting for the Modern Era</h1>
+            <p class="subhead">Go services and only pay for what you use </p>
+
+            <img src="assets/images/scroll.svg" alt="scroll down" class="scroll hide-mobile show-desktop">
+        </section>
+    </div>
+    <!--Services section-->
+    <div class="blue-container">
+        <div class="container">
+            <ul>
+                <li>
+                    <img src="assets/images/icon-1.svg" alt="calender icon">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+                </li>
+                <li>
+                    <img src="assets/images/icon-2.svg" alt="wallet icon">
+                    <p>malesuada. Ac odio tempor orci dapibus ultrices in. Egestas diam in arcu cursus euismod. Dictum fusce ut placerat orci</p>
+                </li>
+                <li>
+                    <img src="assets/images/icon-3.svg" alt="mobile icon">
+                    <p>et dolore magna aliqua. Bibendum est ultricies integer quis. Iaculis urna id volutpat lacus laoreet. Mauris vitae</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--Gray section-->
+    <div class="gray-container">
+        <div class="container">
+            <ul>
+                <li>
+                    <figure>
+                        <img src="assets/images/user1.png" alt="user1 pic">
+                        <blockquote>" Lorem ipsum dolor sit amet, consectetur adipiscing elit,  do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum est ultricies integer quis."</blockquote>
+                        <figcaption>-John Doe</figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="assets/images/user2.png" alt="user2 pic">
+                        <blockquote>" Adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum est ultricies integer quis."</blockquote>
+                        <figcaption>-John Doe</figcaption>
+                    </figure>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--Get started section-->
+    <div class="container">
+        <h2>Start Your Free Trail Now</h2>
+        <a href="#" class="start-btn">Get Started</a>
+    </div>
+
+    <!--Footer-->
+    <footer>
+        <div class="footer-container">
+            <div class="container">
+                <a href="#">
+                    <img src="assets/images/logo-white.svg" alt="logo" class="logo">
+                </a>
+                <p class="address">Lalmatia, Mohammadpur <br>Dhaka, Bangladesh</p>
+                <ul class="footer-links">
+                    <li><a href="#">Terms of services</a></li>
+                    <li><a href="#">Privacy & Policy</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+
+        var menu = document.getElementById("menu");
+        var nav = document.getElementById("nav");
+        var exit = document.getElementById("exit");
+
+        menu.addEventListener('click', function(e){
+            nav.classList.toggle('hide-mobile');
+            e.preventDefault();
+        });
+        exit.addEventListener('click', function(e){
+            nav.classList.add('hide-mobile');
+            e.preventDefault();
+        });
+
+    </script>
+</body>
+</html>
